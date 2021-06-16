@@ -22,6 +22,7 @@ class FlickrFetchr {
       .build()
 
     flickrApi = retrofit.create(FlickrApi::class.java)
+    Log.d(TAG, "FlickrFetchr: Response received")
   }
 
   fun fetchPhotos(): MutableLiveData<List<GalleryItem>> {
